@@ -1,0 +1,45 @@
+.see__wrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  padding-bottom: 20px;
+}
+
+.bg-main {
+  justify-content: start;
+  gap: 24px;
+}
+
+.see__wrap__card {
+  position: relative;
+}
+
+.see__wrap__card .kino {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.rate {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #25283652;
+  backdrop-filter: blur(20px);
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.see__wrap__card__content {
+  margin-top: 12px;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.see__wrap__card__content div {
+  display: flex;
+  justify-content: space-between;
+}

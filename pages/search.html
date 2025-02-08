@@ -15,19 +15,21 @@
   </head>
   <body>
     <div class="bg-main wrap__main">
-      <div>
+      <div class="main__search ">
         <div class="container pt-4">
           <div class="search__wrapper">
             <img src="../img/search-m.svg" />
             <input placeholder="Поиск " />
             <span></span>
-            <img src="../img/filter.svg" />
+            <img src="../img/filter.svg" onclick="goBack('setting')" />
           </div>
         </div>
         <div class="wrap__kino">
           <div class="container wrap__kino__content">
             <span class="text-base font-semibold">Подборка для Вас</span>
-            <span class="text-sm font-medium text-blue">Все</span>
+            <a href="./see-all.html" class="text-sm font-medium text-blue"
+              >Все</a
+            >
           </div>
           <div class="wrap__kino__cards container overflow-x tr-scrollbar">
             <div class="wrap__kino__card">
@@ -144,6 +146,184 @@
           </div>
         </div>
       </div>
+      <div class="setting__search container pt-4">
+        <div class="wrap__navigation">
+          <div class="navigation__wrap">
+            <div class="navigation" onclick="goBack('main')">
+              <img src="../img/chevron-left.svg" />
+            </div>
+            <span> Поиск </span>
+          </div>
+          <span class="font-medium text-sm"> Сбросить </span>
+        </div>
+        <div class="show__wrap">
+          <div class="show__wrap__top">
+            <span class="text-grey text-xs">Показывать</span>
+            <div>
+              <span class="active show__wrap__item">Все</span>
+              <span class="show__wrap__item">Фильмы</span>
+              <span class="show__wrap__item">Сериалы</span>
+            </div>
+          </div>
+          <div class="show__wrap__card">
+            <div>
+              <span class="font-medium">Жанры</span>
+              <span class="text-grey" onclick="goBack('janr')">любые</span>
+            </div>
+            <div>
+              <span class="font-medium">Актеры</span>
+              <span class="text-grey" onclick="goBack('actor')">любые</span>
+            </div>
+            <div>
+              <span class="font-medium">Год</span>
+              <span class="text-grey">любые</span>
+            </div>
+          </div>
+          <div class="show__wrap__sort">
+            <span class="text-grey text-xs">Сортировать по</span>
+            <div>
+              <spa class="sort__item active">Рейтингу</spa>
+              <span class="sort__item">Дате</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="janr__search container pt-4">
+        <div class="wrap__navigation">
+          <div class="navigation__wrap">
+            <div class="navigation" onclick="goBack('setting')">
+              <img src="../img/chevron-left.svg" />
+            </div>
+            <span> Жанры </span>
+          </div>
+          <span class="font-medium text-sm"> Сбросить </span>
+        </div>
+        <div class="search__wrapper">
+          <input placeholder="Поиск " />
+          <img src="../img/search-m.svg" />
+          <span></span>
+        </div>
+        <div class="janr__card">
+          <span class="text-grey text-xs">Популярное</span>
+          <div class="janr__card__wrap">
+            <div class="janr__card__wrap__item active">
+              <span> Комедия </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Мультфильм </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Триллер </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Ужасы </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Фантастика </span>
+              <img src="../img/check.png" />
+            </div>
+          </div>
+        </div>
+        <div class="janr__card">
+          <span class="text-xs text-grey">По алфавиту</span>
+          <div class="janr__card__wrap">
+            <div class="janr__card__by__item active">
+              <span> Аниме </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__by__item">
+              <span> Аниме </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__by__item">
+              <span> Аниме </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__by__item">
+              <span> Аниме </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__by__item">
+              <span> Аниме </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__by__item">
+              <span> Аниме </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__by__item">
+              <span> Аниме </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__by__item">
+              <span> Аниме </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__by__item">
+              <span> Аниме </span>
+              <img src="../img/check.png" />
+            </div>
+          </div>
+        </div>
+        <div class="container blue-btn">
+          <div class="">Показать</div>
+        </div>
+      </div>
+      <div class="actor__search container pt-4">
+        <div class="wrap__navigation">
+          <div class="navigation__wrap">
+            <div class="navigation" onclick="goBack('setting')">
+              <img src="../img/chevron-left.svg" />
+            </div>
+            <span> Актеры </span>
+          </div>
+          <span class="font-medium text-sm"> Сбросить </span>
+        </div>
+        <div class="search__wrapper">
+          <input placeholder="Поиск " />
+          <img src="../img/search-m.svg" />
+          <span></span>
+        </div>
+        <div class="janr__card">
+          <div class="janr__card__wrap">
+            <div class="janr__card__wrap__item active">
+              <span> Юра Борисов </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Юра Борисов </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Юра Борисов </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Юра Борисов </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Юра Борисов </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Юра Борисов </span>
+              <img src="../img/check.png" />
+            </div>
+            <div class="janr__card__wrap__item">
+              <span> Юра Борисов </span>
+              <img src="../img/check.png" />
+            </div>
+          </div>
+        </div>
+        <div class="container blue-btn">
+          <div class="">Показать</div>
+        </div>
+      </div>
       <nav class="text-grey text-sm font-medium">
         <a class="" href="../index.html">
           <svg
@@ -224,5 +404,6 @@
         </a>
       </nav>
     </div>
+    <script src="../js/search.js"></script>
   </body>
 </html>
