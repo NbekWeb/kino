@@ -2,6 +2,10 @@
   margin-top: 30px;
 }
 
+.wrap__main.date {
+  overflow-y: hidden;
+}
+
 .search__category {
   display: flex;
   flex-direction: column;
@@ -34,6 +38,7 @@
 }
 
 .setting__search,
+.date__search,
 .actor__search {
   display: none;
   flex-direction: column;
@@ -161,4 +166,79 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.date__search {
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000b2;
+  justify-content: end;
+}
+
+.date__card {
+  width: 100%;
+  background: #252836;
+}
+.date__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid #ffffffe5;
+}
+
+.date__filter {
+  background: #ffffff33;
+  height: 30px;
+
+  margin-top: 24px;
+  border-radius: 8px;
+}
+.spread {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.spread span {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-grey {
+  margin-top: 4px;
+}
+.text-grey span {
+  color: #92929d;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.overflow-y {
+  height: 120px;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.spread__col {
+  flex-direction: column;
+  align-items: start;
+}
+
+.spread__col span {
+  width: 100%;
+}
+
+.w-half {
+  width: 100%;
+  display: flex;
+}
+
+.w-half .tr-scrollbar {
+  width: 50%;
 }

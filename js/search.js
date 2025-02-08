@@ -2,6 +2,7 @@ const main = document.querySelector(".main__search");
 const setting = document.querySelector(".setting__search");
 const janr = document.querySelector(".janr__search");
 const actor = document.querySelector(".actor__search");
+const date = document.querySelector(".date__search");
 
 function goBack(val) {
     if (val == 'main') {
@@ -13,6 +14,7 @@ function goBack(val) {
         main.style.display = "none"
         janr.style.display = "none"
         actor.style.display = "none"
+        date.style.display = "none"
         setting.style.display = "flex"
 
     } else if (val == 'janr') {
@@ -25,6 +27,9 @@ function goBack(val) {
         actor.style.display = "flex"
         janr.style.display = "none"
         main.style.display = "none"
+
+    } else if (val == 'date') {
+        date.style.display = "flex"
 
     }
 }
@@ -57,3 +62,7 @@ document.querySelectorAll(".janr__card__by__item").forEach(item => {
         this.classList.add("active");
     });
 });
+
+document.querySelectorAll(".date__card").forEach(el =>
+    el.addEventListener("click", e => e.stopPropagation())
+);

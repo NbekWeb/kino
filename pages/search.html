@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="bg-main wrap__main">
-      <div class="main__search ">
+      <div class="main__search">
         <div class="container pt-4">
           <div class="search__wrapper">
             <img src="../img/search-m.svg" />
@@ -176,7 +176,7 @@
             </div>
             <div>
               <span class="font-medium">Год</span>
-              <span class="text-grey">любые</span>
+              <span class="text-grey" onclick="goBack('date')">любые</span>
             </div>
           </div>
           <div class="show__wrap__sort">
@@ -184,6 +184,47 @@
             <div>
               <spa class="sort__item active">Рейтингу</spa>
               <span class="sort__item">Дате</span>
+            </div>
+          </div>
+        </div>
+        <div class="date__search" onclick="goBack('setting')">
+          <div class="date__card">
+            <div class="date__top">
+              <span class="text-xs font-medium">Сбросить</span>
+              <span class="text-base font-medium">Год</span>
+              <span class="text-xs font-medium">Выбрать</span>
+            </div>
+            <div class="container">
+              <div class="date__filter spread">
+                <span>с</span>
+                <span>по</span>
+              </div>
+              <div class="w-half">
+                <div class="tr-scrollbar overflow-y">
+                  <div class="spread text-grey spread__col">
+                    <span class="">2024</span>
+                    <span class="">2023</span>
+                    <span class="">2022</span>
+                    <span class="">2021</span>
+                    <span class="">2020</span>
+                    <span class="">2019</span>
+                    <span class="">2018</span>
+                    <span class="">2017</span>
+                  </div>
+                </div>
+                <div class="tr-scrollbar overflow-y">
+                  <div class="spread text-grey spread__col">
+                    <span class="">2024</span>
+                    <span class="">2023</span>
+                    <span class="">2022</span>
+                    <span class="">2021</span>
+                    <span class="">2020</span>
+                    <span class="">2019</span>
+                    <span class="">2018</span>
+                    <span class="">2017</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -324,6 +365,7 @@
           <div class="">Показать</div>
         </div>
       </div>
+
       <nav class="text-grey text-sm font-medium">
         <a class="" href="../index.html">
           <svg
