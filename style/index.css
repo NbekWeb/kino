@@ -253,7 +253,21 @@ nav a.active.nav__stroke svg path {
   gap: 4px;
 }
 
-.navigation{
+.navigation__wrap {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navigation {
   width: 32px;
   height: 32px;
+  background: #252836;
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
