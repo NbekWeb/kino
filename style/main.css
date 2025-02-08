@@ -1,0 +1,134 @@
+.top__user {
+  padding-bottom: 32px;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.top__user .wrap__user {
+  display: flex;
+  gap: 16px;
+  height: 40px;
+  width: 100%;
+}
+
+.top__user .wrap__user img {
+  height: 100%;
+  width: auto;
+}
+
+.top__user .wrap__user div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top__user .heart {
+  width: 32px;
+  height: 32px;
+  background: #252836;
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top__user .heart img {
+  width: 24px;
+  height: auto;
+}
+
+/* main slider */
+
+.main__slider.swiper {
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
+  margin-top: 24px;
+}
+
+.main__slider .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 138px;
+  transition: width 0.3s ease;
+  margin: 8px 0;
+
+  position: relative;
+}
+
+.main__slider .top-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: end;
+  padding: 36px 16px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main__slider .swiper-slide-active {
+  height: 154px;
+  margin: 0;
+}
+
+.main__slider .swiper-slide-active .top-bg {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.main__slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 16px;
+}
+
+.main__slider .swiper-pagination {
+  bottom: 0px !important;
+}
+
+.main__slider .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background: #12cdd9;
+  opacity: 32%;
+}
+
+.main__slider .swiper-pagination-bullet-active {
+  width: 24px;
+  opacity: 100%;
+}
+
+
+.wrap__janr {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.wrap__janr__item {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 8px 12px;
+  width: max-content;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.wrap__janr__item:hover {
+  color: #12cdd9;
+  cursor: pointer;
+}
+.wrap__janr__item.active {
+  font-weight: 600;
+  color: #12cdd9;
+  background: #252836;
+}
