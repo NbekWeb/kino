@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="bg-main wrap__main">
-      <div class="pt-4 container">
+      <div class="pt-4 container main__profil">
         <div class="">
           <h2 class="text-base font-semibold">Профиль</h2>
           <div class="wrap__user">
@@ -48,7 +48,11 @@
                   </div>
                   <span class="text-sm font-medium">Управление подпиской</span>
                 </div>
-                <img class="" src="../img/chevron.svg" />
+                <img
+                  class=""
+                  src="../img/chevron.svg"
+                  onclick="goBack('subs')"
+                />
               </div>
               <div class="user__card__setting">
                 <div class="user__card__setting__item">
@@ -57,7 +61,11 @@
                   </div>
                   <span class="text-sm font-medium">История просмотра </span>
                 </div>
-                <img class="" src="../img/chevron.svg" />
+                <img
+                  class=""
+                  src="../img/chevron.svg"
+                  onclick="goBack('hystory')"
+                />
               </div>
               <div class="user__card__setting">
                 <div class="user__card__setting__item">
@@ -72,6 +80,140 @@
           </div>
         </div>
         <div class="enter__btn">Выйти из профиля</div>
+      </div>
+      <div class="pt-4 subs__profil container">
+        <div>
+          <div class="navigation__wrap">
+            <div class="navigation" onclick="goBack('main')">
+              <img src="../img/chevron-left.svg" />
+            </div>
+            <span> Управление подпиской </span>
+          </div>
+          <h2 class="text-yellow font-semibold">
+            Самые свежие фильмы и сериалы смотрите с нами
+          </h2>
+          <div class="subs__wrapper">
+            <div class="subs__item active">
+              <img src="../img/pattern.png" />
+              <span class="text-base font-semibold"
+                >Тариф <br />
+                СТАНДАРТ</span
+              >
+              <span class="text-xs">399 ₽ / месяц</span>
+            </div>
+            <div class="subs__item">
+              <img src="../img/pattern.png" />
+              <span class="text-base font-semibold"
+                >Тариф <br />
+                ПРЕМИУМ</span
+              >
+              <span class="text-xs">599 ₽ / месяц</span>
+            </div>
+          </div>
+          <div class="subs__cards">
+            <div>
+              <img src="../img/hd.svg" />
+              <span>Фильмы в высоком качество </span>
+            </div>
+            <div>
+              <img src="../img/remove.svg" />
+              <span>Просмотр без рекламы </span>
+            </div>
+            <div>
+              <img src="../img/download.svg" />
+              <span>Сохраняй, чтобы посмотреть позднее </span>
+            </div>
+            <div>
+              <img src="../img/audio.svg" />
+              <span>Высокое качество звука </span>
+            </div>
+          </div>
+        </div>
+        <div class="blue-btn text-base font-medium">Оплатить</div>
+      </div>
+      <div class="pt-4 hystory__profil container">
+        <div>
+          <div class="navigation__wrap">
+            <div class="navigation" onclick="goBack('main')">
+              <img src="../img/chevron-left.svg" />
+            </div>
+            <span> История просмотров </span>
+          </div>
+          <div class="wrap__hystory">
+            <div class="wrap__hystory__card">
+              <div class="hystory__img">
+                <img src="../img/hystory.jpg" />
+                <span class="bg-white">
+                  <span class="bg-yellow"></span>
+                </span>
+              </div>
+              <div class="hystory__content">
+                <span class="text-sm font-semibold"
+                  >Великолепная
+                  <br />
+                  пятерка</span
+                >
+                <span class="text-grey font-medium text-xs"
+                  >1 сезон, 11 серия</span
+                >
+              </div>
+            </div>
+            <div class="wrap__hystory__card">
+              <div class="hystory__img">
+                <img src="../img/hystory.jpg" />
+                <span class="bg-white">
+                  <span class="bg-yellow"></span>
+                </span>
+              </div>
+              <div class="hystory__content">
+                <span class="text-sm font-semibold"
+                  >Великолепная
+                  <br />
+                  пятерка</span
+                >
+                <span class="text-grey font-medium text-xs"
+                  >1 сезон, 11 серия</span
+                >
+              </div>
+            </div>
+            <div class="wrap__hystory__card">
+              <div class="hystory__img">
+                <img src="../img/hystory.jpg" />
+                <span class="bg-white">
+                  <span class="bg-yellow"></span>
+                </span>
+              </div>
+              <div class="hystory__content">
+                <span class="text-sm font-semibold"
+                  >Великолепная
+                  <br />
+                  пятерка</span
+                >
+                <span class="text-grey font-medium text-xs"
+                  >1 сезон, 11 серия</span
+                >
+              </div>
+            </div>
+            <div class="wrap__hystory__card">
+              <div class="hystory__img">
+                <img src="../img/hystory.jpg" />
+                <span class="bg-white">
+                  <span class="bg-yellow"></span>
+                </span>
+              </div>
+              <div class="hystory__content">
+                <span class="text-sm font-semibold"
+                  >Великолепная
+                  <br />
+                  пятерка</span
+                >
+                <span class="text-grey font-medium text-xs"
+                  >1 сезон, 11 серия</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <nav class="text-grey text-sm font-medium">
         <a class="" href="../index.html">
@@ -154,5 +296,6 @@
         </a>
       </nav>
     </div>
+    <script src="../js/profil.js"></script>
   </body>
 </html>
