@@ -1,0 +1,25 @@
+.bg-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0 100px;
+}
+
+img {
+  width: 100%;
+}
+
+span {
+  font-weight: 600;
+  color: #12cdd9;
+}
+
+.text-2xl {
+  margin-top: 12px;
+  font-size: 28px;
+}
+.text-xl {
+  font-size: 20px;
+}
